@@ -1,6 +1,6 @@
 http:
   listener:
-    host: "0.0.0.0"
+    host: "localhost"
     port: "9081"
     path: "/travelOnTipCall/{serviceType}"
     
