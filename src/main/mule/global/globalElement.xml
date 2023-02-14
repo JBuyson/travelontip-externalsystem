@@ -8,7 +8,7 @@ http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/cu
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="556881d4-c4e7-483c-a426-c1c94c444d0d" >
 		<http:listener-connection host="${http.listener.host}" port="${http.listener.port}" />
 	</http:listener-config>
-	<configuration-properties doc:name="Configuration properties" doc:id="02ea3ee2-9e54-432d-b0f4-964aed7457f8" file="config\local.yaml" />
+	<configuration-properties doc:name="Configuration properties" doc:id="02ea3ee2-9e54-432d-b0f4-964aed7457f8" file="config/${MULE_ENV}.yaml" />
 	<db:config name="Database_Config" doc:name="Database Config" doc:id="ed4b9e6f-cf0e-472c-b8b6-094f5137824e" >
 		<db:my-sql-connection host="${db.mySQL.host}" port="${db.mySQL.port}" user="${db.mySQL.username}" password="${db.mySQL.password}" database="${db.mySQL.database}"/>
 	</db:config>
