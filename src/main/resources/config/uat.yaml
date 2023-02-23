@@ -1,5 +1,14 @@
 http:
   listener:
-    host: "0.0.0.0"
+    host: "localhost"
     port: "9081"
-    path: "/getRoutes" 
+    path: "/travelOnTipCall/{serviceType}"
+    
+db:
+  mySQL:
+    host: "sql12.freesqldatabase.com"
+    port: "3306"
+    username: "sql12599830"
+    password: "n52bkXy7EL"
+    database: "sql12599830"
+    
